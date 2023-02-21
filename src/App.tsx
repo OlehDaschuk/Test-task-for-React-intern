@@ -54,7 +54,7 @@ function App() {
         <Dropdown
           items={countries}
           btnContent={(selectedCountry) => (
-            <div className="border-2 rounded px-2 flex">
+            <div className="flex">
               {countries.find((country) => country.id === selectedCountry.id)?.name}
             </div>
           )}
@@ -68,7 +68,7 @@ function App() {
         <Dropdown
           items={users}
           btnContent={(selectedUser) => (
-            <div className="flex items-center gap-3 h-8 border-2 rounded px-2 py-1">
+            <div className="flex items-center gap-3 h-8">
               <img
                 className="rounded-full h-full"
                 src={users.find((user) => user.id === selectedUser.id)?.image}

@@ -20,7 +20,7 @@ export const Dropdown: React.FC<IProps> = ({ btnContent, renderOptionAs, items }
 
   return (
     <div>
-      <button onClick={() => setOpen(true)}>
+      <button className="border-2 rounded px-2" onClick={() => setOpen(true)}>
         {selected === null ? 'Select....' : btnContent(selected)}
       </button>
 
